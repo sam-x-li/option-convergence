@@ -68,9 +68,14 @@ def main():
 
     axes[0].hist(data, 100, density=True)
     axes[0].plot(x, pdf, 'r', linewidth=2, label="Lognormal PDF")
+    axes[0].set_xlabel('Terminal Price')
+    axes[0].set_ylabel('Frequency Density')
+    axes[0].set_title('Lognormal distribution of terminal stock prices')
 
     axes[1].hist(np.log(data), 100, density=True)
     axes[1].set_title('Log of Stock Price')
+    axes[1].set_xlabel('Log Terminal Price')
+    axes[1].set_ylabel('Frequency Density')
 
     plt.show()
 
