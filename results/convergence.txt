@@ -1,0 +1,26 @@
+Convergence of simulated (Monte Carlo) and analytical (Black-Scholes-Merton) European option prices
+
+Parameters: 
+
+Option Type: Call
+Initial Underlying Stock Price: 100
+Annual Risk-free rate of return: 0.04
+Annual Volatility: 0.3
+Strike Price: 110
+Years Until Maturity: 0.5
+
+
+          Simulated Monte Carlo Price  Analytical BSM price  Absolute Difference  Percentage Difference
+n
+100                          5.426098              5.411455            -0.014643              -0.270585
+500                          5.069423              5.411455             0.342032               6.320521
+1000                         4.663011              5.411455             0.748444              13.830739
+5000                         5.307058              5.411455             0.104397               1.929183
+10000                        5.545381              5.411455            -0.133926              -2.474864
+50000                        5.467213              5.411455            -0.055757              -1.030357
+100000                       5.400444              5.411455             0.011011               0.203484
+500000                       5.435111              5.411455            -0.023655              -0.437137
+1000000                      5.413025              5.411455            -0.001570              -0.029004
+5000000                      5.416095              5.411455            -0.004640              -0.085739
+10000000                     5.413561              5.411455            -0.002106              -0.038913
+50000000                     5.411698              5.411455            -0.000243              -0.004493
